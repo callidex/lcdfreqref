@@ -1,0 +1,2413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>ed655230-1867-4b39-b23a-e8ef3dd2e586</ProjectGuid>
+    <avrdevice>atmega2560</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>StaticLibrary</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>lib$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <Name>ArduinoCore</Name>
+    <ArduinoIdeDir>C:\Program Files (x86)\Arduino</ArduinoIdeDir>
+    <ArduinoProjectType>Core</ArduinoProjectType>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <AssemblyName>ArduinoCore</AssemblyName>
+    <RootNamespace>ArduinoCore</RootNamespace>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress />
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue />
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+  <options />
+  <configurations />
+  <files />
+  <documentation help="" />
+  <offline-documentation help="" />
+  <dependencies>
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.34.1" />
+  </dependencies>
+</framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.Device>-mmcu=atmega2560 -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega2560"</avrgcc.common.Device>
+  <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>ARDUINO=10803</Value>
+      <Value>ARDUINO_AVR_MEGA2560</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x0010</Value>
+      <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.132\include</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\Documentation</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html\search</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\html</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\html\search</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompButton</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompCrop</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompDualStateButton</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompGauge</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompGpio</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompHotspot</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompNumber</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompPage</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompPicture</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompProgressBar</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompRtc</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompSlider</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompText</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompTimer</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompWaveform</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\html</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\html\search</Value>
+      <Value>..\include\libraries\SPI</Value>
+      <Value>..\include\libraries\SD</Value>
+      <Value>..\include\libraries\SD\utility</Value>
+      <Value>..\include\libraries\SoftwareSerial</Value>
+      <Value>..\include\core</Value>
+      <Value>..\include\variants\mega</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.OtherFlags>-fno-threadsafe-statics</avrgcc.compiler.optimization.OtherFlags>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.warnings.InhibitAllWarnings>True</avrgcc.compiler.warnings.InhibitAllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -std=gnu11</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>ARDUINO=10803</Value>
+      <Value>ARDUINO_AVR_MEGA2560</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x0010</Value>
+      <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.132\include</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\Documentation</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html\search</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\html</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\html\search</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompButton</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompCrop</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompDualStateButton</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompGauge</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompGpio</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompHotspot</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompNumber</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompPage</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompPicture</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompProgressBar</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompRtc</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompSlider</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompText</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompTimer</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompWaveform</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\html</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\html\search</Value>
+      <Value>..\include\libraries\SPI</Value>
+      <Value>..\include\libraries\SD</Value>
+      <Value>..\include\libraries\SD\utility</Value>
+      <Value>..\include\libraries\SoftwareSerial</Value>
+      <Value>..\include\core</Value>
+      <Value>..\include\variants\mega</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.OtherFlags>-fno-threadsafe-statics</avrgcccpp.compiler.optimization.OtherFlags>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.warnings.InhibitAllWarnings>True</avrgcccpp.compiler.warnings.InhibitAllWarnings>
+  <avrgcccpp.compiler.miscellaneous.OtherFlags>-std=gnu++11</avrgcccpp.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcccpp.linker.libraries.Libraries>
+  <avrgcccpp.linker.miscellaneous.LinkerFlags>-Os</avrgcccpp.linker.miscellaneous.LinkerFlags>
+  <avrgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.132\include</Value>
+    </ListValues>
+  </avrgcccpp.assembler.general.IncludePaths>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+  <avrgcc.common.Device>-mmcu=atmega2560 -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.2.132\gcc\dev\atmega2560"</avrgcc.common.Device>
+  <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>ARDUINO=10803</Value>
+      <Value>ARDUINO_AVR_MEGA2560</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x0010</Value>
+      <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.132\include</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\Documentation</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html\search</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\html</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\html\search</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompButton</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompCrop</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompDualStateButton</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompGauge</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompGpio</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompHotspot</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompNumber</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompPage</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompPicture</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompProgressBar</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompRtc</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompSlider</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompText</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompTimer</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompWaveform</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\html</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\html\search</Value>
+      <Value>..\include\libraries\SPI</Value>
+      <Value>..\include\libraries\SD</Value>
+      <Value>..\include\libraries\SD\utility</Value>
+      <Value>..\include\libraries\SoftwareSerial</Value>
+      <Value>..\include\core</Value>
+      <Value>..\include\variants\mega</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.OtherFlags>-fno-threadsafe-statics</avrgcc.compiler.optimization.OtherFlags>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.warnings.InhibitAllWarnings>True</avrgcc.compiler.warnings.InhibitAllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -std=gnu11</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+      <Value>F_CPU=16000000L</Value>
+      <Value>ARDUINO=10803</Value>
+      <Value>ARDUINO_AVR_MEGA2560</Value>
+      <Value>ARDUINO_ARCH_AVR</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x0010</Value>
+      <Value>USB_MANUFACTURER="\"Arduino LLC\""</Value>
+    </ListValues>
+  </avrgcccpp.compiler.symbols.DefSymbols>
+  <avrgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.132\include</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\Documentation</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html\search</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\html</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\doc\html\search</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompButton</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompCrop</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompDualStateButton</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompGauge</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompGpio</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompHotspot</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompNumber</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompPage</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompPicture</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompProgressBar</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompRtc</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompSlider</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompText</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompTimer</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\examples\CompWaveform</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\html</Value>
+      <Value>..\include\libraries\iteadlib_arduino_nextion-master\html\search</Value>
+      <Value>..\include\libraries\SPI</Value>
+      <Value>..\include\libraries\SD</Value>
+      <Value>..\include\libraries\SD\utility</Value>
+      <Value>..\include\libraries\SoftwareSerial</Value>
+      <Value>..\include\core</Value>
+      <Value>..\include\variants\mega</Value>
+    </ListValues>
+  </avrgcccpp.compiler.directories.IncludePaths>
+  <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
+  <avrgcccpp.compiler.optimization.OtherFlags>-fno-threadsafe-statics</avrgcccpp.compiler.optimization.OtherFlags>
+  <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+  <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+  <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+  <avrgcccpp.compiler.warnings.InhibitAllWarnings>True</avrgcccpp.compiler.warnings.InhibitAllWarnings>
+  <avrgcccpp.compiler.miscellaneous.OtherFlags>-std=gnu++11</avrgcccpp.compiler.miscellaneous.OtherFlags>
+  <avrgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcccpp.linker.libraries.Libraries>
+  <avrgcccpp.linker.miscellaneous.LinkerFlags>-Os</avrgcccpp.linker.miscellaneous.LinkerFlags>
+  <avrgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.132\include</Value>
+    </ListValues>
+  </avrgcccpp.assembler.general.IncludePaths>
+  <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+</AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="include\core\Arduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\binary.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\Client.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\HardwareSerial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\HardwareSerial_private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\IPAddress.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\new.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\PluggableUSB.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\Print.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\Printable.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\Server.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\Stream.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\Udp.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\USBAPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\USBCore.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\USBDesc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\WCharacter.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\wiring_private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\core\WString.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\doxygen.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexButton.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexCheckbox.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexConfig.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexCrop.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexDualStateButton.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexGauge.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexGpio.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexHardware.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexHotspot.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexNumber.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexObject.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexPage.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexPicture.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexProgressBar.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexRadio.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexRtc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexScrolltext.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexSlider.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexText.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexTimer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\Nextion.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexTouch.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexUpload.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexVariable.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\iteadlib_arduino_nextion-master\NexWaveform.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\SD.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\FatStructs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\Sd2Card.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\Sd2PinMap.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\SdFat.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\SdFatmainpage.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\SdFatUtil.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SD\utility\SdInfo.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SoftwareSerial\SoftwareSerial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\libraries\SPI\SPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\variants\mega\pins_arduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\abi.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\CDC.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\HardwareSerial.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\HardwareSerial0.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\HardwareSerial1.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\HardwareSerial2.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\HardwareSerial3.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\hooks.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\IPAddress.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\main.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\new.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\PluggableUSB.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\PreprocessingAssembly\wiring_pulse.S">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\Print.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\Stream.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\Tone.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\USBCore.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\WInterrupts.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\wiring.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\wiring_analog.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\wiring_digital.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\wiring_pulse.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\wiring_shift.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\WMath.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\core\WString.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexButton.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexCheckbox.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexCrop.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexDualStateButton.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexGauge.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexGpio.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexHardware.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexHotspot.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexNumber.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexObject.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexPage.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexPicture.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexProgressBar.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexRadio.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexRtc.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexScrolltext.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexSlider.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexText.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexTimer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexTouch.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexUpload.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexVariable.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\iteadlib_arduino_nextion-master\NexWaveform.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SD\File.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SD\SD.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SD\utility\Sd2Card.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SD\utility\SdFile.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SD\utility\SdVolume.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SoftwareSerial\SoftwareSerial.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\libraries\SPI\SPI.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="include\" />
+    <Folder Include="include\core\" />
+    <Folder Include="include\libraries\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\doc\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html\search\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\doc\html\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\doc\html\search\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompButton\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompCrop\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompDualStateButton\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompGauge\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompGpio\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompHotspot\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompNumber\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompPage\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompPicture\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompProgressBar\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompRtc\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompSlider\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompText\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompTimer\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompWaveform\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\html\" />
+    <Folder Include="include\libraries\iteadlib_arduino_nextion-master\html\search\" />
+    <Folder Include="include\libraries\SD\" />
+    <Folder Include="include\libraries\SD\utility\" />
+    <Folder Include="include\libraries\SoftwareSerial\" />
+    <Folder Include="include\libraries\SPI\" />
+    <Folder Include="include\variants\" />
+    <Folder Include="include\variants\mega\" />
+    <Folder Include="src\" />
+    <Folder Include="src\core\" />
+    <Folder Include="src\core\PreprocessingAssembly\" />
+    <Folder Include="src\libraries\" />
+    <Folder Include="src\libraries\iteadlib_arduino_nextion-master\" />
+    <Folder Include="src\libraries\iteadlib_arduino_nextion-master\doc\" />
+    <Folder Include="src\libraries\iteadlib_arduino_nextion-master\doc\Documentation\" />
+    <Folder Include="src\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html\" />
+    <Folder Include="src\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html\search\" />
+    <Folder Include="src\libraries\iteadlib_arduino_nextion-master\doc\html\" />
+    <Folder Include="src\libraries\iteadlib_arduino_nextion-master\doc\html\search\" />
+    <Folder Include="src\libraries\iteadlib_arduino_nextion-master\html\" />
+    <Folder Include="src\libraries\iteadlib_arduino_nextion-master\html\search\" />
+    <Folder Include="src\libraries\SD\" />
+    <Folder Include="src\libraries\SD\utility\" />
+    <Folder Include="src\libraries\SoftwareSerial\" />
+    <Folder Include="src\libraries\SPI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\all__0_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\all__1_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\all__2_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\all__3_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\all__4_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\all__5_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\all__6_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\all__7_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\all__8_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\all__9_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\all__a_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\all__b_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\all__c_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\annotated.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\classes.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\classes__0_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_button-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_button.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_checkbox-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_checkbox.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_crop-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_crop.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_d_s_button-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_d_s_button.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_gauge-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_gauge.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_gpio-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_gpio.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_hotspot-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_hotspot.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_number-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_number.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_object-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_object.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_page-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_page.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_picture-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_picture.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_progress_bar-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_progress_bar.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_radio-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_radio.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_rtc-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_rtc.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_scrolltext-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_scrolltext.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_slider-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_slider.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_text-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_text.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_timer-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_timer.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_touch-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_touch.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_upload-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_upload.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_variable-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_variable.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_waveform-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\class_nex_waveform.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_03b339e07921b59492972343ca10817a.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_13cb27e7707bad7dfc51e3225831c378.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_13fdc5ade55290335ffe8ce184cef04a.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_2af451c22587252d0014dbc596e2e19a.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_2c7bb7af606a816dc5d12b9c9f93cdb0.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_2dae0a562653f78d59931f0e4b070746.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_362f30179229d7166f5b27ed31213abf.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_37f22946f81336e96770e95cfc44f0d2.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_3a828b7214103d705cc83e20f29bdad9.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_44a14d16127103fb968497cef18e2651.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_472f54fb1d9b74971d8e15d62f212bd3.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_4b43661efaa18af91f213d2681ebd37e.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_53835f0dfcb7abf9d97bc46682fab859.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_56b2cc69259505f347a71fbc57576a27.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_575635cc091aa47ec7be91b5cee17183.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_58f5ecea2e2241e947c6d0b6b0a6574c.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_5e6e68a9c696254bbe284f64da34b89b.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_64c3f06c647884d4700075d99ac5b054.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_67a124841349777013960f48b4ca08cd.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_6cfe794d384e1e9411c8ed4782275733.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_72ff46b74e37ff2b17afdc4e77374e7e.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_745a997035d9a4e2cc7e167d495d0fea.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_774ce03e0cf0196adaf36811ea67e4fe.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_78dd7a2fe86fb9861d4d5f2b99877d05.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_7962cac16a99e8bbaaea18abede03fcb.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_79c8dee8d7e42a0e610f37121a84c3a9.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_88a597dd2562898b9ec6ba971ad7a8dd.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_88b085927d35ec3e069c44673959ea9f.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_8dcbebf38b229bfa7bb34d68bf824093.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_948fd774738d2193a0c62cde43f2828a.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_94f957df570c2c6f9ce99687820a8979.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_9bbf8342b0f9a157b7af08fe1412fc17.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_9d128665765fcd7de990374f9fac59bd.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_9eb8f3e2c1e15f49f92fa8db657a0769.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_a121929b9544fab6b74c5c8052ef2940.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_a1532c81ac7ffe94cd7af0c8adbf41fd.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_a239a53bd1465befb8d39895b56e9769.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_a48692e2802a027399b146b680655303.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_a6952c8402f497b804d4dc074e4d0d34.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_a6c6ee996e64a0a9573e0623ecba0f92.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_a844282e018cbc370849ee176c1e0170.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_a923273c60bfbb58e031a3ae0355ae2a.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_b3d36b9fee6f94e0e9351d3ce179e46a.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_baeae3733d35da11d00f3bdec2bcf189.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_c918e8bf3fc71f849978cdb0d900e61c.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_ca98f8e97468ceedc413f5dac34c5fa4.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_ce36ac18ad3deaf5eae0bd2e09775a7d.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_d28a4824dc47e487b107a5db32ef43c4.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_d3260f5c9df29a04ffb2fb4dcbe826a0.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_d3f8111a063a965b5243b82006fc3654.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_d4ccf8ea657e68a549605ed7009e9385.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_da2f6b5bc4c7a05969000ccffa56cdba.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_ddeed1b19b98904c6aa1b48c4ffa871b.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_decd89faf7b7ac7dc2c3b4f68098211d.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_e41b6c247808b0e8972a01b8d58acefc.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_e79857bc4faa7405ea054e9dea791d5c.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_f3d39c87bc262720c50d5e3885667b8a.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_f5fbbb3bb8d47423eec30b73de0af948.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_f76977d9ffe8ddf3ad01f3d689aa5df4.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_fb9e35f5ea815af588c3e61147b6fddc.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dir_fcb17c1a6a78f3a510af094d9b07469a.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\doc_2html_2dynsections_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\doc_2html_2jquery_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\doc_2html_2search_2search_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\doxygen_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\doxygen_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\dynsections_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\examples.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\files.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\files__0_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\files__1_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_d.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_e.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_func.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_func_d.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_func_e.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_func_g.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_func_n.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_func_p.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_func_r.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_func_s.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_func_w.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_func_~.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_g.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_n.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_p.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_r.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_s.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_w.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions__0_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions__1_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions__2_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions__3_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions__4_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions__5_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions__6_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions__7_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions__8_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions__9_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\functions_~.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\globals.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\globals_defs.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\globals_func.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\globals_type.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\graph_legend.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\groups__0_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\groups__1_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\groups__2_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\groups__3_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\group___component.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\group___configuration.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\group___core_a_p_i.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\group___get_started.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\group___touch_event.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\hierarchy.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html\index.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html\search\nomatches.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html_2dynsections_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html_2jquery_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html_2search_2search_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\index.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\inherits.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\jquery_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\license_8md_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\md_license.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\md_readme.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\md_release_notes.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\modules.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\pages.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\pages__0_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\pages__1_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\readme_8md_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\release__notes_8md_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\search_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\typedefs__0_8js_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_button_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_button_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_button_v0_32_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_button__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_crop_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_crop_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_crop_v0_32_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_crop__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_dual_state_button_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_dual_state_button_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_dual_state_button_v0_32_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_dual_state_button__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_gauge_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_gauge_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_gauge_v0_32_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_gauge__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_gpio_2_comp_gpio_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_gpio_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_gpio_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_hotspot_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_hotspot_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_hotspot_v0_32_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_hotspot__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_number_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_number_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_number_v0_32_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_number__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_page_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_page_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_page_v0_32_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_page__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_picture_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_picture_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_picture_v0_32_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_picture__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_progress_bar_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_progress_bar_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_progress_bar_v0_32_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_progress_bar__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_rtc_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_rtc_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_slider_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_slider_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_slider_v0_32_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_slider__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_text_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_text_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_text_v0_32_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_text__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_timer_2_comp_waveform__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_timer_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_timer_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_timer_v0_32_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_timer__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_waveform_2_comp_waveform__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_waveform_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_waveform_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_waveform_v0_32_8ino-example.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_comp_waveform__v0__32_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nextion_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nextion_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_button_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_button_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_button_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_button_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_checkbox_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_checkbox_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_checkbox_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_checkbox_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_config_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_config_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_crop_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_crop_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_crop_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_crop_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_dual_state_button_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_dual_state_button_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_dual_state_button_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_dual_state_button_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_gauge_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_gauge_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_gauge_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_gauge_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_gpio_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_gpio_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_gpio_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_gpio_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_hardware_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_hardware_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_hardware_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_hardware_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_hotspot_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_hotspot_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_hotspot_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_hotspot_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_number_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_number_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_number_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_number_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_object_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_object_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_object_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_object_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_page_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_page_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_page_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_page_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_picture_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_picture_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_picture_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_picture_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_progress_bar_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_progress_bar_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_progress_bar_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_progress_bar_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_radio_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_radio_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_radio_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_radio_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_rtc_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_rtc_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_rtc_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_rtc_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_scrolltext_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_scrolltext_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_scrolltext_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_scrolltext_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_slider_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_slider_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_slider_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_slider_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_text_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_text_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_text_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_text_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_timer_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_timer_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_timer_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_timer_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_touch_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_touch_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_touch_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_touch_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_upload_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_upload_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_upload_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_upload_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_variable_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_variable_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_variable_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_waveform_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_waveform_8cpp_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_waveform_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_nex_waveform_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\Documentation\_upload_8ino_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\html\index.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\doc\html\search\nomatches.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompButton\CompButton_v0_32.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompCrop\CompCrop_v0_32.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompDualStateButton\CompDualStateButton_v0_32.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompGauge\CompGauge_v0_32.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompGpio\CompGpio.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompHotspot\CompHotSpot_v0_32.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompNumber\CompNumber_v0_32.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompPage\CompPage_v0_32.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompPicture\CompPicture_v0_32.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompProgressBar\CompProgressBar_v0_32.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompRtc\CompRtc.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompSlider\CompSlider_v0_32.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompText\CompText_v0_32.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompTimer\CompTimer_v0_32.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\examples\CompWaveform\CompWaveform_v0_32.HMI">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\annotated.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\classes.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_button-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_button.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_checkbox-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_checkbox.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_crop-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_crop.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_d_s_button-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_d_s_button.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_gauge-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_gauge.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_gpio-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_gpio.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_hotspot-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_hotspot.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_number-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_number.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_object-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_object.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_page-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_page.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_picture-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_picture.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_progress_bar-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_progress_bar.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_radio-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_radio.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_rtc-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_rtc.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_scrolltext-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_scrolltext.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_slider-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_slider.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_text-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_text.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_timer-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_timer.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_touch-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_touch.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_upload-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_upload.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_variable-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_variable.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_waveform-members.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\class_nex_waveform.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\doxygen_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\doxygen_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\files.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_d.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_e.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_func.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_func_d.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_func_e.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_func_g.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_func_n.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_func_p.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_func_r.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_func_s.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_func_w.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_func_~.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_g.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_n.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_p.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_r.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_s.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_w.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\functions_~.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\globals.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\globals_defs.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\globals_func.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\globals_type.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\group___component.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\group___configuration.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\group___core_a_p_i.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\group___get_started.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\group___touch_event.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\hierarchy.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\index.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\md_readme.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\md_release_notes.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\modules.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\pages.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\all_0.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\all_1.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\all_2.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\all_3.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\all_4.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\all_5.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\all_6.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\all_7.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\all_8.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\all_9.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\all_a.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\all_b.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\all_c.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\classes_0.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\files_0.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\files_1.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\functions_0.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\functions_1.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\functions_2.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\functions_3.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\functions_4.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\functions_5.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\functions_6.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\functions_7.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\functions_8.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\functions_9.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\groups_0.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\groups_1.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\groups_2.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\groups_3.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\nomatches.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\pages_0.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\pages_1.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\search\typedefs_0.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nextion_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nextion_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_button_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_button_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_button_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_checkbox_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_checkbox_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_checkbox_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_config_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_config_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_crop_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_crop_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_crop_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_dual_state_button_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_dual_state_button_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_dual_state_button_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_gauge_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_gauge_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_gauge_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_gpio_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_gpio_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_hardware_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_hardware_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_hardware_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_hotspot_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_hotspot_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_hotspot_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_number_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_number_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_number_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_object_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_object_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_object_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_page_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_page_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_page_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_picture_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_picture_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_picture_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_progress_bar_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_progress_bar_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_progress_bar_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_radio_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_radio_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_radio_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_rtc_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_rtc_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_scrolltext_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_scrolltext_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_scrolltext_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_slider_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_slider_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_slider_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_text_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_text_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_text_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_timer_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_timer_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_timer_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_touch_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_touch_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_touch_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_upload_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_upload_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_upload_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_variable_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_variable_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_waveform_8cpp.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_waveform_8h.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="include\libraries\iteadlib_arduino_nextion-master\html\_nex_waveform_8h_source.html">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\libraries\iteadlib_arduino_nextion-master\doc\Documentation\doxygen.css">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html\doxygen.css">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html\search\search.css">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\libraries\iteadlib_arduino_nextion-master\doc\Documentation\html\tabs.css">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\libraries\iteadlib_arduino_nextion-master\doc\Documentation\navtree.css">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\libraries\iteadlib_arduino_nextion-master\doc\Documentation\tabs.css">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\libraries\iteadlib_arduino_nextion-master\doc\html\doxygen.css">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\libraries\iteadlib_arduino_nextion-master\doc\html\search\search.css">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\libraries\iteadlib_arduino_nextion-master\doc\html\tabs.css">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\libraries\iteadlib_arduino_nextion-master\html\doxygen.css">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\libraries\iteadlib_arduino_nextion-master\html\search\search.css">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\libraries\iteadlib_arduino_nextion-master\html\tabs.css">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
